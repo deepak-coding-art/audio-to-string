@@ -17,7 +17,8 @@
       it back to audio
     </p>
     <textarea name="code" id="code" cols="100" rows="50">
-        function playAudio(audioString) {
+        const audioString = "" // copy text from text file and past in the: ""
+        function playAudio() {
         const audioElement = document.createElement("audio");
         audioElement.src = audioString;
         document.body.appendChild(audioElement);
