@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="file" id="audio-file" />
+    <button onclick="getFile()">Convert to text</button>
+    <button onclick="playAudio()">Play</button>
+    <button onclick="getTextFile()">generate txt file</button>
+    <p>
+      For using this you need to copy the text from the text file and paste in
+      js file as a contest then you can use the given function below to convert
+      it back to audio
+    </p>
+    <textarea name="code" id="code" cols="100" rows="50">
+        function playAudio(audioString) {
+        const audioElement = document.createElement("audio");
+        audioElement.src = audioString;
+        document.body.appendChild(audioElement);
+        audioElement.play();
+      }</textarea
+    >
+    <button id="sampleBtn">Sample</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
